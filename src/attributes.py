@@ -10,7 +10,8 @@ data = pd.read_csv("res\\Speed Dating Data.csv", encoding="ISO-8859-1", sep=',')
 data_eval = data.loc[:, ['gender', 'attr1_1', 'sinc1_1', 'intel1_1', 'fun1_1', 'amb1_1', 'shar1_1', 
                          'attr2_1', 'sinc2_1', 'intel2_1', 'fun2_1', 'amb2_1', 'shar2_1', 'attr3_1', 
                          'sinc3_1', 'intel3_1', 'fun3_1', 'amb3_1', 'attr4_1', 'sinc4_1', 'intel4_1', 
-                         'fun4_1', 'amb4_1', 'shar4_1', 'attr5_1', 'sinc5_1', 'intel5_1', 'fun5_1', 'amb5_1']]
+                         'fun4_1', 'amb4_1', 'shar4_1']]
+
 data_men = data_eval[data_eval['gender'] == 1]
 data_women = data_eval[data_eval['gender'] == 0]
 qualities = ['Attractive', 'Sincere', 'Intelligent', 'Fun', 'Ambitious', 'Shared Interests']
